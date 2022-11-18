@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>JavaScript Program to find Square and Cube of a number</title>
+</head>
+<style>
+    body {
+  background-color: #E3E2DF;
+  border-color: #d8d1d3;
+}
+
+#first{
+    background-color: #EF4C74;
+            border: none;
+            padding: 1rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 6rem 3rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: relative;
+            top: -7rem;
+            left: 25rem;
+            border: 2rem;
+            border-color: black;
+            text-decoration-color: white;
+            color: bisque;
+            
+
+}
+#container{
+    background-color: #E3AFBC;
+    border: none;
+            padding: 1rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 6rem 3rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: relative;
+            top: -7rem;
+            left: 25rem;
+            border: 2rem;
+            border-color: black;
+            text-decoration-color: white;
+            color: bisque;
+            
+}
+#num1{
+    background-color: #5D001E;
+    border: none;
+            padding: 1rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 4rem 2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            position: relative;
+            top: -14rem;
+            left: 34rem;
+            border: 2rem;
+            border-color: black;
+            text-decoration-color: white;
+            color: bisque;
+    
+            
+}
+#para{
+    color:#5D001E ;
+    top: 2rem;
+    font-size: larger;
+    left: 65rem;
+    letter-spacing: 0.3rem;
+
+}
+</style>
+<body>
+    <P id="para"><br>WELCOME </br><br>  TO  </br> <br>PRERANA'S </br>  <br>MATHEMATIC'S </br> <br> WORLD</P>
+<table>
+<tr>
+<td> <select name="a" id="first" >
+
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+</select> </td>
+<td> <button id="container" onclick="square()" >Submit</button> </td>
+</tr>
+</table>
+<div id="num1"></div>
+</body>
+
+<script type="text/javascript">
+    function square()
+    {
+    var a,Cube;
+    a = parseInt(document.getElementById ("first").value);
+    //Formulae for Square and Cube
+    Cube = a*a*a;
+    document.getElementById ("num1").innerHTML = +Cube;
+    }
+    </script>
+
+</html>
